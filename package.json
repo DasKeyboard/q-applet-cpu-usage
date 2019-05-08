@@ -45,6 +45,15 @@
           "y": 1
         }
       }
-    }
+    },
+    "questions": [{
+      "key": "defaultColor",
+      "label": "Choose the color of empty keys",
+      "help": "Keys that represent the current CPU usage will be lit up all others will be set to this color.",
+      "required": true,
+      "order": 1,
+      "value": "#000000",
+      "controlType": "color"
+    }]
   }
 }

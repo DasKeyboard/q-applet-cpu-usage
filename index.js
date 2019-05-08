@@ -33,6 +33,14 @@ class CpuUsage extends q.DesktopApp {
     });
   }
 
+  async applyConfig() {
+    let defaultColor = this.config.defaultColor;
+    /* Throw an error if the color matches any color used to indicate cpu activity */
+    if (colors.indexOf(defaultColor) > -1) {
+      throw new Error(`The selected default color ${defaultColor} is a reserved color.`);
+    }
+  }
+
   async getCpuUsage() {
     return new Promise((resolve) => {
       os.cpuUsage(v => {
@@ -76,7 +84,7 @@ class CpuUsage extends q.DesktopApp {
     if (zoneIndex >= colors.length) {
       // if the zone is after the number max of keys to light. Turn off the light
       // Black color = no light
-      return '#000000';
+      return this.config.defaultColor || '#000000';
     } else {
       // turn on the zone with the proper color
       return colors[zoneIndex];
