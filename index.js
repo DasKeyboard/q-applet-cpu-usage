@@ -32,14 +32,6 @@ class CpuUsage extends q.DesktopApp {
     });
   }
 
-  async applyConfig() {
-    let defaultColor = this.config.defaultColor;
-    /* Throw an error if the color matches any color used to indicate cpu activity */
-    if (colors.indexOf(defaultColor) > -1) {
-      throw new Error(`The selected default color ${defaultColor} is a reserved color.`);
-    }
-  }
-
   async getCpuUsage() {
     return new Promise((resolve) => {
       os.cpuUsage(v => {
