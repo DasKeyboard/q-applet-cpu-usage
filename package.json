@@ -2,7 +2,7 @@
   "name": "daskeyboard-applet--cpu-usage",
   "displayName": "CPU Usage",
   "version": "1.0.6",
-  "description": "Displays CPU usage on a Das Keyboard Q device",
+  "description": "Displays CPU usage.",
   "longDescription": "Keep an eye on the CPU activity on your Q keyboard!",
   "officialProductName": "CPU Usage",
   "appUrl": "",
