@@ -19,7 +19,6 @@
   "licenseUrl": "http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt",
   "changelogUrl": "CHANGELOG.md",
   "license": "MIT",
-  "qActionUrl": "",
   "readMeUrl": "README.md",
   "readMeEndUserUrl": "README_ENDUSER.md",
   "main": "index.js",
