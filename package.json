@@ -1,7 +1,7 @@
 {
   "name": "daskeyboard-applet--cpu-usage",
   "displayName": "CPU Usage",
-  "version": "1.0.6",
+  "version": "2.0.0",
   "description": "Displays CPU usage.",
   "longDescription": "Keep an eye on the CPU activity on your Q keyboard!",
   "officialProductName": "CPU Usage",
