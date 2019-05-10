@@ -58,9 +58,9 @@ class CpuUsage extends q.DesktopApp {
   /** get a color of a zone depending on it's index on the zone array */
   getColor(zoneIndex, numberOfKeysToLight) {
     if (zoneIndex >= numberOfKeysToLight) {
-      // if the zone is after the number max of keys to light. Turn off the light
+      // if the zone is after the number max of keys to light. Set the light to the selected default or turn it off
       // Black color = no light
-      return '#000000';
+      return this.config.defaultColor || '#000000';
     } else {
       // turn on the zone with the proper color
       return colors[zoneIndex];
